@@ -1,18 +1,15 @@
 package net.earthcomputer.aoc;
 
 import net.earthcomputer.aoc.days.Day1;
+import net.earthcomputer.aoc.days.Day2;
 import org.jetbrains.annotations.Nullable;
 
-import java.io.IOException;
-import java.io.UncheckedIOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     private static final Day[] DAYS = {
         new Day1(),
+        new Day2(),
     };
 
     public static void main(String[] args) {
@@ -41,20 +38,10 @@ public class Main {
     private static Integer askForNumber(Scanner scanner, String prompt) {
         System.out.print(prompt);
 
-        String numberStr = scanner.nextLine();
-        try {
-            return Integer.valueOf(numberStr);
-        } catch (NumberFormatException e) {
+        Integer result = Util.parseIntOrNull(scanner.nextLine());
+        if (result == null) {
             System.out.println("Invalid number");
-            return null;
         }
-    }
-
-    public static List<String> readInput() {
-        try {
-            return Files.readAllLines(Path.of("input.txt"));
-        } catch (IOException e) {
-            throw new UncheckedIOException(e);
-        }
+        return result;
     }
 }

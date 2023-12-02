@@ -1,7 +1,7 @@
 package net.earthcomputer.aoc.days;
 
 import net.earthcomputer.aoc.Day;
-import net.earthcomputer.aoc.Main;
+import net.earthcomputer.aoc.Util;
 
 public class Day1 implements Day {
     private static final String[] NUMBERS = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
@@ -18,7 +18,7 @@ public class Day1 implements Day {
 
     private void run(boolean part2) {
         int total = 0;
-        for (String line : Main.readInput()) {
+        for (String line : Util.readInput()) {
             // look for first number
             firstNum: for (int i = 0; i < line.length(); i++) {
                 char c = line.charAt(i);
