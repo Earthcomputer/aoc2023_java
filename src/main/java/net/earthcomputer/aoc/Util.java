@@ -21,6 +21,15 @@ public final class Util {
         }
     }
 
+    @Nullable
+    public static Long parseLongOrNull(String input) {
+        try {
+            return Long.valueOf(input);
+        } catch (NumberFormatException e) {
+            return null;
+        }
+    }
+
     public static List<String> readInput() {
         try {
             return Files.readAllLines(Path.of("input.txt"));
