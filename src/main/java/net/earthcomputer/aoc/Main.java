@@ -7,6 +7,7 @@ import net.earthcomputer.aoc.days.Day4;
 import net.earthcomputer.aoc.days.Day5;
 import net.earthcomputer.aoc.days.Day6;
 import net.earthcomputer.aoc.days.Day7;
+import net.earthcomputer.aoc.days.Day8;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Scanner;
@@ -20,6 +21,7 @@ public class Main {
         new Day5(),
         new Day6(),
         new Day7(),
+        new Day8(),
     };
 
     public static void main(String[] args) {
