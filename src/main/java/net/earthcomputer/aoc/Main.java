@@ -3,6 +3,7 @@ package net.earthcomputer.aoc;
 import net.earthcomputer.aoc.days.Day1;
 import net.earthcomputer.aoc.days.Day10;
 import net.earthcomputer.aoc.days.Day11;
+import net.earthcomputer.aoc.days.Day12;
 import net.earthcomputer.aoc.days.Day2;
 import net.earthcomputer.aoc.days.Day3;
 import net.earthcomputer.aoc.days.Day4;
@@ -28,6 +29,7 @@ public class Main {
         new Day9(),
         new Day10(),
         new Day11(),
+        new Day12(),
     };
 
     public static void main(String[] args) {
