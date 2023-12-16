@@ -1,20 +1,6 @@
 package net.earthcomputer.aoc;
 
-import net.earthcomputer.aoc.days.Day1;
-import net.earthcomputer.aoc.days.Day10;
-import net.earthcomputer.aoc.days.Day11;
-import net.earthcomputer.aoc.days.Day12;
-import net.earthcomputer.aoc.days.Day13;
-import net.earthcomputer.aoc.days.Day14;
-import net.earthcomputer.aoc.days.Day15;
-import net.earthcomputer.aoc.days.Day2;
-import net.earthcomputer.aoc.days.Day3;
-import net.earthcomputer.aoc.days.Day4;
-import net.earthcomputer.aoc.days.Day5;
-import net.earthcomputer.aoc.days.Day6;
-import net.earthcomputer.aoc.days.Day7;
-import net.earthcomputer.aoc.days.Day8;
-import net.earthcomputer.aoc.days.Day9;
+import net.earthcomputer.aoc.days.*;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Scanner;
@@ -36,6 +22,7 @@ public class Main {
         new Day13(),
         new Day14(),
         new Day15(),
+        new Day16(),
     };
 
     public static void main(String[] args) {
