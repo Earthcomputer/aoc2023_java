@@ -24,6 +24,7 @@ public class Main {
         new Day15(),
         new Day16(),
         new Day17(),
+        new Day18(),
     };
 
     public static void main(String[] args) {

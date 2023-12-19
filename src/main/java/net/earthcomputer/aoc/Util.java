@@ -14,8 +14,13 @@ public final class Util {
 
     @Nullable
     public static Integer parseIntOrNull(String input) {
+        return parseIntOrNull(input, 10);
+    }
+
+    @Nullable
+    public static Integer parseIntOrNull(String input, int radix) {
         try {
-            return Integer.valueOf(input);
+            return Integer.valueOf(input, radix);
         } catch (NumberFormatException e) {
             return null;
         }
